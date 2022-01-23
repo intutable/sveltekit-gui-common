@@ -1,0 +1,39 @@
+<script lang="ts">
+    import { Output, OutputType } from "./types"
+
+    export let output: Output = new Output(OutputType.Info, "No output available")
+</script>
+
+{#if output}
+    <div
+        class="output-container"
+        class:info={output.type === OutputType.Info}
+        class:error={output.type === OutputType.Error}
+    >
+        <div class="title">{output.type === OutputType.Info ? "INFO" : "ERROR"}</div>
+        {output.message}
+    </div>
+{/if}
+
+<style lang="sass">
+  @use "../style/theme"
+
+  .output-container
+    @extend .theme-plain
+    height: 100%
+    border-radius: 6px
+    padding: 0.5rem
+
+  .info
+    background: hsla(0, 0%, 0%, 0.05)
+
+  .error
+    background: #FEDCE5
+
+  .title
+    color: gray
+    font:
+      weight: bold
+      size: 0.8rem
+    padding-bottom: 0.5rem
+</style>
