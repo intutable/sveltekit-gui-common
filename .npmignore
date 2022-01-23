@@ -1,0 +1,9 @@
+src/
+tests/
+*.db
+
+jest.config.cjs
+tsconfig.json
+.prettierignore
+.prettierrc.json
+.gitlab-ci.yml
