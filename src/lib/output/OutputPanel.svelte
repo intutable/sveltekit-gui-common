@@ -23,7 +23,6 @@
 
   .output-container
     @extend .theme-plain
-    height: 100%
     border-radius: 6px
     padding: 0.5rem
 
