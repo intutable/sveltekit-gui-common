@@ -3,6 +3,9 @@ export class Output {
 }
 
 export enum OutputType {
+    Log = "Log",
     Info = "Info",
-    Error = "Error"
+    Debug = "Debug",
+    Warn = "Warn",
+    Error = "Error",
 }
