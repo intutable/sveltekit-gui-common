@@ -34,7 +34,8 @@ This project adheres to the [xTable development guidelines][development-guidelin
 5. A reviewer will approve the merge request (or ask for changes).
 6. Finally, the merge request is merged into `develop`.
 
-If you want to create new common component, just create a new directory under `src/lib/` and place your Svelte components there. You also have to export the components in the `index.ts`.  
+### New Components and Styles
+If you want to create new common components, just create a new directory under `src/lib/` and place your Svelte components there. You also have to export the components in the `index.ts`.  
 If you want to add new common styles to the project, add them under `src/lib/style`.
 
     common-gui
