@@ -7,16 +7,16 @@ const config = {
         files: {
             template: "./src/component.html",
             lib: "./src/lib",
-            assets: "public"
+            assets: "public",
         },
         package: {
             dir: "./dist",
             emitTypes: true,
             // excludes all .d.ts and files starting with _ as the name
             exports: filepath => !/^_|\/_|\.d\.ts$/.test(filepath),
-            files: () => true
-        }
-    }
+            files: () => true,
+        },
+    },
 }
 
 export default config
