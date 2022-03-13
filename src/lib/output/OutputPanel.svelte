@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Output, OutputType } from "../index"
+    import { Output, OutputType } from "./types"
 
     // You can either provide one single output to be displayed, or an array of outputs.
     export let output: Output = new Output(OutputType.Info, "No output available")
