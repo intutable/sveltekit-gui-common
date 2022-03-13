@@ -1,5 +1,16 @@
 import LoadingIndicator from "./loadingIndicator/LoadingIndicator.svelte"
 import OutputPanel from "./output/OutputPanel.svelte"
-import { Output, OutputType } from "./output/types"
 
-export { LoadingIndicator, OutputPanel, Output, OutputType }
+export class Output {
+    constructor(public type: OutputType, public message: string) {}
+}
+
+export enum OutputType {
+    Log = "Log",
+    Info = "Info",
+    Debug = "Debug",
+    Warn = "Warn",
+    Error = "Error",
+}
+
+export { LoadingIndicator, OutputPanel }

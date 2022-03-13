@@ -8,7 +8,7 @@ test("OutputPanel displays default message", () => {
 
     expect(getByText("INFO")).toBeInTheDocument()
     expect(getByText("No output available")).toBeInTheDocument()
-    expect(container.querySelector('.info')).toBeInTheDocument()
+    expect(container.querySelector(".info")).toBeInTheDocument()
 })
 
 test("OutputPanel displays provided info message", () => {
@@ -18,7 +18,7 @@ test("OutputPanel displays provided info message", () => {
 
     expect(getByText("INFO")).toBeInTheDocument()
     expect(getByText(output.message)).toBeInTheDocument()
-    expect(container.querySelector('.info')).toBeInTheDocument()
+    expect(container.querySelector(".info")).toBeInTheDocument()
 })
 
 test("OutputPanel displays provided error message", () => {
@@ -28,5 +28,5 @@ test("OutputPanel displays provided error message", () => {
 
     expect(getByText("ERROR")).toBeInTheDocument()
     expect(getByText(output.message)).toBeInTheDocument()
-    expect(container.querySelector('.error')).toBeInTheDocument()
+    expect(container.querySelector(".error")).toBeInTheDocument()
 })
