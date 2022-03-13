@@ -1,6 +1,6 @@
 import "@testing-library/jest-dom"
 import { render } from "@testing-library/svelte"
-import { Output, OutputType } from "../src/lib"
+import { Output, OutputType } from "../src/lib/output/types"
 import OutputPanel from "../src/lib/output/OutputPanel.svelte"
 
 test("OutputPanel displays default message", () => {
